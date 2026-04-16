@@ -1,0 +1,143 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  height: 70px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e8e8e8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.navbar-logo-img {
+  height: 45px;
+  width: auto;
+  max-width: 160px;
+  object-fit: contain;
+}
+
+.navbar-logo {
+  font-size: 22px;
+  font-weight: 800;
+  color: #1982c1;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navbar-links a:hover {
+  color: #1982c1;
+}
+
+.navbar-cta {
+  background-color: #1982c1;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.navbar-cta:hover {
+  background-color: #1558b0;
+}
+
+.active-link {
+  color: #1a78bd!important;
+  font-weight: 700 !important;
+}
+
+/* Hamburger — hidden on desktop */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #333333;
+  padding: 4px 8px;
+}
+
+/* Mobile menu — hidden by default */
+.mobile-menu {
+  display: none;
+}
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .navbar-links {
+    display: none;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 2px solid #e8e8e8;
+    padding: 16px 24px 24px 24px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    z-index: 999;
+  }
+
+  .mobile-menu a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 14px 0;
+    width: 100%;
+    border-bottom: 1px solid #f0f0f0;
+    transition: color 0.2s ease;
+  }
+
+  .mobile-menu a:hover {
+    color: #1982c1;
+  }
+
+  .mobile-cta {
+    margin-top: 16px;
+    width: 100%;
+    padding: 14px;
+    font-size: 15px;
+  }
+}

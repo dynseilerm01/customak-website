@@ -1,0 +1,219 @@
+.contact-page {
+  padding-top: 70px;
+  min-height: 100vh;
+  background-color: #f8faff;
+}
+
+.contact-header {
+  text-align: center;
+  padding: 60px 80px 40px 80px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.contact-header h1 {
+  font-size: 42px;
+  font-weight: 800;
+  color: #111111;
+  margin-bottom: 12px;
+}
+
+.contact-header p {
+  font-size: 17px;
+  color: #666666;
+}
+
+.contact-body {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 40px;
+}
+
+.contact-form-wrapper {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 48px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 12px 16px;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 15px;
+  color: #333333;
+  outline: none;
+  transition: border-color 0.2s ease;
+  font-family: inherit;
+  background-color: #fafafa;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #1982c1;
+  background-color: #ffffff;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.btn-submit {
+  background-color: #1982c1;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  align-self: flex-start;
+}
+
+.btn-submit:hover {
+  background-color: #1558b0;
+}
+
+.contact-success {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.success-icon {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.contact-success h3 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #111111;
+  margin-bottom: 12px;
+}
+
+.contact-success p {
+  font-size: 16px;
+  color: #666666;
+  margin-bottom: 28px;
+}
+
+.btn-primary {
+  background-color: #1982c1;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-info-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111111;
+}
+
+.contact-info-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.info-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 18px 20px;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(26, 115, 232, 0.1);
+}
+
+.info-card.whatsapp {
+  border-left: 4px solid #25d366;
+}
+
+.info-icon {
+  font-size: 28px;
+}
+
+.info-card strong {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #111111;
+  margin-bottom: 4px;
+}
+
+.info-card p {
+  font-size: 13px;
+  color: #666666;
+  margin: 0;
+}
+
+.contact-badge {
+  background-color: #eef4ff;
+  border-radius: 10px;
+  padding: 16px 20px;
+  font-size: 14px;
+  color: #444444;
+}
+
+.contact-badge strong {
+  color: #1982c1;
+}
+
+@media (max-width: 768px) {
+  .contact-header {
+    padding: 40px 24px;
+  }
+
+  .contact-body {
+    grid-template-columns: 1fr;
+    padding: 30px 24px;
+  }
+
+  .contact-form-wrapper {
+    padding: 30px 20px;
+  }
+}

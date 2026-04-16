@@ -1,0 +1,255 @@
+.produits-page {
+  padding-top: 70px;
+  min-height: 100vh;
+  background-color: #f8faff;
+}
+
+.produits-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 50px 80px;
+}
+
+.produits-header h1 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #111111;
+  margin-bottom: 12px;
+}
+
+.produits-header p {
+  font-size: 16px;
+  color: #666666;
+  max-width: 560px;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.produits-badges {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  background-color: #f0f4ff;
+  border: 1px solid #d0e0ff;
+  color: #1982c1;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+
+.produits-body {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 40px;
+}
+
+.produits-sidebar {
+  position: sticky;
+  top: 90px;
+  height: fit-content;
+}
+
+.sidebar-title {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #999999;
+  margin-bottom: 12px;
+}
+
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 15px;
+  color: #444444;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-bottom: 4px;
+}
+
+.sidebar-item:hover {
+  background-color: #eef4ff;
+  color: #1982c1;
+}
+
+.sidebar-item.active {
+  background-color: #1982c1;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.sidebar-item.active .sidebar-count {
+  background-color: rgba(255,255,255,0.3);
+  color: #ffffff;
+}
+
+.sidebar-count {
+  font-size: 12px;
+  background-color: #e8e8e8;
+  color: #666666;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+.produits-main {
+  flex: 1;
+}
+
+.produits-count {
+  font-size: 14px;
+  color: #888888;
+  margin-bottom: 24px;
+}
+
+.produits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.produit-card {
+  background-color: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.produit-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(26, 115, 232, 0.1);
+}
+
+.produit-tag {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background-color: #1982c1;
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  z-index: 1;
+}
+
+.produit-visual {
+  background-color: #f0f4ff;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 64px;
+}
+
+.produit-info {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.produit-name {
+  font-size: 17px;
+  font-weight: 700;
+  color: #111111;
+  margin-bottom: 8px;
+}
+
+.produit-description {
+  font-size: 14px;
+  color: #666666;
+  line-height: 1.7;
+  margin-bottom: 16px;
+  flex: 1;
+}
+
+.produit-meta {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+  padding: 12px;
+  background-color: #f8faff;
+  border-radius: 8px;
+}
+
+.produit-meta span {
+  font-size: 12px;
+  color: #555555;
+}
+
+.produit-btn {
+  width: 100%;
+  background-color: #1982c1;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.produit-btn:hover {
+  background-color: #1558b0;
+}
+
+@media (max-width: 768px) {
+  .produits-header {
+    padding: 40px 24px;
+  }
+
+  .produits-body {
+    grid-template-columns: 1fr;
+    padding: 30px 24px;
+  }
+
+  .produits-sidebar {
+    position: static;
+  }
+
+  .sidebar-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .sidebar-item {
+    border: 2px solid #e0e0e0;
+    border-radius: 20px;
+    padding: 6px 14px;
+    font-size: 13px;
+  }
+
+  .sidebar-item.active {
+    background-color: #1982c1;
+    border-color: #1982c1;
+  }
+
+  .produits-grid {
+    grid-template-columns: 1fr;
+  }
+}
