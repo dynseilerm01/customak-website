@@ -41,7 +41,7 @@
 .step-number {
   width: 64px;
   height: 64px;
-  background-color: #1982c1;
+  background-color: #1a78bd;
   color: white;
   border-radius: 50%;
   display: flex;
@@ -57,7 +57,7 @@
   top: 20px;
   right: -10px;
   font-size: 24px;
-  color: #1982c1;
+  color: #1a78bd;
   font-weight: 300;
 }
 

@@ -23,7 +23,7 @@
 }
 
 .hero-highlight {
-  color: #1982c1;
+  color: #1a78bd;
 }
 
 .hero-subtitle {
@@ -39,7 +39,7 @@
 }
 
 .btn-primary {
-  background-color: #1982c1;
+  background-color: #1a78bd;
   color: white;
   border: none;
   padding: 14px 28px;
@@ -56,8 +56,8 @@
 
 .btn-secondary {
   background-color: transparent;
-  color: #1982c1;
-  border: 2px solid #1982c1;
+  color: #1a78bd;
+  border: 2px solid #1a78bd;
   padding: 14px 28px;
   border-radius: 6px;
   font-size: 15px;
@@ -67,7 +67,7 @@
 }
 
 .btn-secondary:hover {
-  background-color: #1982c1;
+  background-color: #1a78bd;
   color: white;
 }
 

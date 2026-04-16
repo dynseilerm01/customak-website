@@ -1,4 +1,5 @@
 import logo from '../assets/logo.svg'
+import { Link } from 'react-router-dom'
 
 function Footer() {
   return (
@@ -80,9 +81,9 @@ function Footer() {
         </div>
         <p className="footer-copy">© 2024 Customak. Tous droits réservés.</p>
         <div className="footer-legal">
-          <a href="#">Mentions légales</a>
-          <a href="#">CGV</a>
-          <a href="#">Confidentialité</a>
+          <Link to="/mentions-legales">Mentions légales</Link>
+          <Link to="/cgv">CGV</Link>
+          <Link to="/confidentialite">Confidentialité</Link>
         </div>
       </div>
 

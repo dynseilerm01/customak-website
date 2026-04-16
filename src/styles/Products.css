@@ -46,7 +46,7 @@
   position: absolute;
   top: 16px;
   right: 16px;
-  background-color: #1982c1;
+  background-color: #1a78bd;
   color: white;
   font-size: 11px;
   font-weight: 700;
@@ -78,7 +78,7 @@
 .product-btn {
   background: none;
   border: none;
-  color: #1982c1;
+  color: #1a78bd;
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
@@ -96,8 +96,8 @@
 
 .btn-outline {
   background-color: transparent;
-  color: #1982c1;
-  border: 2px solid #1982c1;
+  color: #1a78bd;
+  border: 2px solid #1a78bd;
   padding: 14px 36px;
   border-radius: 6px;
   font-size: 15px;
@@ -107,7 +107,7 @@
 }
 
 .btn-outline:hover {
-  background-color: #1982c1;
+  background-color: #1a78bd;
   color: white;
 }
 

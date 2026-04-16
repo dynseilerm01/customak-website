@@ -24,7 +24,7 @@
 .navbar-logo {
   font-size: 22px;
   font-weight: 800;
-  color: #1982c1;
+  color: #1a78bd;
   letter-spacing: 2px;
   text-decoration: none;
 }
@@ -44,11 +44,11 @@
 }
 
 .navbar-links a:hover {
-  color: #1982c1;
+  color: #1a78bd;
 }
 
 .navbar-cta {
-  background-color: #1982c1;
+  background-color: #1a78bd;
   color: white;
   border: none;
   padding: 10px 22px;
@@ -131,7 +131,7 @@
   }
 
   .mobile-menu a:hover {
-    color: #1982c1;
+    color: #1a78bd;
   }
 
   .mobile-cta {
