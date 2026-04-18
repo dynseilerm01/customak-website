@@ -15,9 +15,9 @@
 .footer-logo-img {
   height: 45px;
   width: auto;
+  max-width: 100%;
   object-fit: contain;
   margin-bottom: 14px;
-  /* filter: brightness(0) invert(1); */
 }
 
 .footer-tagline {

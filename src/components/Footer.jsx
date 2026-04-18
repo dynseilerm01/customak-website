@@ -65,7 +65,7 @@ function Footer() {
             <li><a href="#">Blog</a></li>
             <li><a href="#">Partenaires B2B</a></li>
             <li><a href="#">Mentions légales</a></li>
-            <li><a href="#">CGV</a></li>
+            <li><Link to="/cgv">CGV</Link></li>
           </ul>
         </div>
 

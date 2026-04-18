@@ -6,6 +6,7 @@ import Produits from './pages/Produits'
 import APropos from './pages/APropos'
 import Contact from './pages/Contact'
 import CGV from './pages/CGV'
+import ScrollToTop from './components/ScrollToTop'
 import './styles/Navbar.css'
 import './styles/Hero.css'
 import './styles/Features.css'
@@ -19,6 +20,7 @@ import './styles/CGV.css'
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
