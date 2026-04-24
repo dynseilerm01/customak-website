@@ -18,18 +18,23 @@
   max-width: 100%;
   object-fit: contain;
   margin-bottom: 14px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.footer-logo-img:hover {
+  opacity: 0.8;
 }
 
 .footer-tagline {
   font-size: 15px;
   color: #ffffff;
-  font-weight: 700;
 }
 
-/* Wide 5-column grid */
-.footer-grid {
+/* New grid with newsletter taking 2 columns */
+.footer-grid-new {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr) 1.5fr;
   gap: 40px;
   padding-bottom: 60px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -62,6 +67,66 @@
 
 .footer-links a:hover {
   color: #ffffff;
+}
+
+/* Newsletter box */
+.footer-newsletter {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.newsletter-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 8px;
+}
+
+.newsletter-input {
+  flex: 1;
+  padding: 12px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  font-size: 14px;
+  font-family: 'Nunito Sans', sans-serif;
+  transition: border-color 0.2s ease;
+}
+
+.newsletter-input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.newsletter-input:focus {
+  outline: none;
+  border-color: #1a78bd;
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.newsletter-btn {
+  padding: 12px 20px;
+  background-color: #1a78bd;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  white-space: nowrap;
+}
+
+.newsletter-btn:hover {
+  background-color: #1468a0;
 }
 
 /* Bottom bar */
@@ -117,9 +182,23 @@
     padding: 50px 24px 0 24px;
   }
 
-  .footer-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .footer-logo-img {
+    height: 35px;
+    max-width: 200px;
+  }
+
+  .footer-grid-new {
+    grid-template-columns: 1fr;
     gap: 30px;
+  }
+
+  .footer-newsletter {
+    order: -1;
+    grid-column: span 1;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
   }
 
   .footer-bottom {
