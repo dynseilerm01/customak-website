@@ -203,6 +203,7 @@
 }
 
 .engagement-cta {
+  display: inline-block;
   margin-top: 16px;
   background-color: #1a78bd;
   color: white;
@@ -212,6 +213,7 @@
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
+  text-decoration: none;
   transition: background-color 0.2s ease;
 }
 

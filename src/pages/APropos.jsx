@@ -1,4 +1,6 @@
 import '../styles/APropos.css'
+import { Link } from 'react-router-dom'
+import '../styles/APropos.css'
 
 function APropos() {
   return (
@@ -78,7 +80,8 @@ function APropos() {
           <h2>Notre engagement</h2>
           <p>Nous nous engageons à maintenir un niveau d'exigence constant dans la qualité des solutions proposées et dans le suivi des projets. Cela implique des processus clairs, une sélection rigoureuse des partenaires et une attention particulière portée à l'exécution.</p>
           <p>Notre objectif est de construire des relations durables, fondées sur la confiance, la transparence et la cohérence des résultats.</p>
-          <button className="engagement-cta">Contactez-nous</button>
+          <Link to="/contact" className="engagement-cta">Contactez-nous</Link>
+          
         </div>
       </div>
 
